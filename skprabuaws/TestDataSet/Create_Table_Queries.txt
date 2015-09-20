@@ -1,0 +1,15 @@
+create table book (itemid INT(15), attribute_name varchar(100),attribute_value varchar(100), PRIMARY KEY (itemid,attribute_name));
+
+create table bookChanges (sessionid BIGINT(20),itemid INT(15), col_id INT(15),attribute_value varchar(100), PRIMARY KEY (itemid,col_id,sessionid));
+
+create table attribute_details (attribute_id not null AUTO_INCREMENT, attribute_name varchar(100) PRIMARY KEY (attribute_id));
+
+create table Subscriber(userid int NOT NULL AUTO_INCREMENT,emailid varchar(35),PRIMARY KEY (userid));
+
+create table SubConfig(conditionid int NOT NULL AUTO_INCREMENT, userid int,PRIMARY KEY (conditionid),FOREIGN KEY (userid) REFERENCES Subscriber(userid));
+
+create table Config(conditionid int,cond_col_id int, value varchar(100),operatorId int,operatortype int);
+
+---------------------------------------------------------------------------------------------------------------------------
+
+

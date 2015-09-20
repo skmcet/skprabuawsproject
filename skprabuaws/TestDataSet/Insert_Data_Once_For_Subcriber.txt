@@ -1,0 +1,22 @@
+insert into Subscriber values(1,"prabu073@gmail.com");
+insert into Subscriber values(2,"prabu.rajendran@zohocorp.com");
+insert into Subscriber values(3,"prabu073@yahoo.com");
+
+insert into SubConfig values (1,1);
+insert into SubConfig values (4,1);
+insert into SubConfig values (2,2);
+insert into SubConfig values (3,2);
+insert into SubConfig values (5,2);
+insert into SubConfig values (6,3);
+
+
+insert into Config values(1,1,"freakonomics",0,1);
+insert into Config values(4,1,"10",0,1);
+insert into Config values(4,4,"Effective Java",0,1);
+insert into Config values(2,4,"90",0,1);
+insert into Config values(3,1,"freakonomics in ",2,1);
+insert into Config values(3,2,"Levitt & Dubner",0,1);
+insert into Config values(5,4,"7",0,1);
+insert into Config values(6,1,"Joshua Bloch",2,1);
+insert into Config values(6,5,"William Morrow",2,1);
+
